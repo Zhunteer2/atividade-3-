@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+    
+  z-index: 3;
+  width: 0px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"style="text-align: center;"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-theme-l1" style="text-align: center;">Pesquisa </a>
+    
+  </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Artigo</b></h4>
+  
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal" style="text-align: center;">A História da Internet</h1>
+      <h2 class="w3-text-teal" style="text-align: center;">Arpanet  </h2>
+    <p>Historicamente, as comunicações de voz e dados baseavam-se em métodos de comutação de circuitos, como exemplificado na rede telefónica tradicional, em que a cada chamada telefônica é atribuída uma ligação específica, de ponta a ponta, entre as duas estações de comunicação. Essas estações podem ser telefones ou computadores.[11] A linha temporariamente dedicada tipicamente compreende muitas linhas intermediárias que são montadas em uma cadeia que vai da estação de origem até a estação de destino. Com a comutação de pacotes, uma rede pode compartilhar uma única ligação para comunicação entre vários pares de receptores e transmissores.[12]
+As primeiras ideias para uma rede de computadores destinada a permitir comunicações gerais entre usuários foram formuladas pelo cientista de computação Joseph Carl Licklider da BBN Technologies, em abril de 1963, em discurso do conceito da "Rede Intergalática de Computadores". Essas ideias abrangiam muitas das características da Internet contemporânea.[13][14] Em outubro de 1963, Licklider foi nomeado chefe dos programas de Ciências Comportamentais e Comando da Agência para Projetos de Pesquisa Avançada (ARPA) do Departamento de Defesa. Ele convenceu Ivan Sutherland e Bob Taylor de que esse conceito de rede era muito importante e merecia desenvolvimento, embora o mesmo tenha saído da ARPA antes de qualquer contrato ser designado para desenvolvimento.[15]
+Sutherland e Taylor continuaram interessados ​​em criar a rede para permitir que pesquisadores patrocinados pela ARPA em vários locais corporativos e acadêmicos utilizassem computadores fornecidos e, em parte, distribuíssem rapidamente novos softwares e outros resultados da ciência da computação.[16] Taylor tinha três terminais de computadores em seu escritório, cada um conectado a computadores separados, que a ARPA estava financiando: um para a Corporação de Desenvolvimento de Sistemas (SDC) Q-32 em Santa Mônica, um para o projeto Genie da Universidade da Califórnia em Berkeley e outro para o Multics no Instituto de Tecnologia de Massachusetts (MIT).[17] Taylor relembra a circunstância:</p>
+    </div>
+  </div>
+  <div class="w3-twothird w3-container">
+    <h2 class="w3-text-teal">NCP</h2>
+    <p>Em 1970, a ARPANET estava consolidada com centenas de computadores conectados.
+
+        S. Crocker e sua equipe do Network Working Group estabeleceram o protocolo de controle chamado Network Control Protocol (NCP), que permitia o desenvolvimento de aplicativos a partir dos computadores conectados à ARPANET.
+        
+        Foi assim que, em 1972, Ray Tomlinson criou o software básico de e-mail, que se tornou o aplicativo mais importante da década e mudou a natureza da comunicação e colaboração entre as pessoas.
+        
+        Seu impacto foi tão grande que a ARPANET se afastou gradativamente do uso militar, aproximando-se do uso científico na disseminação de informações. Por esse motivo, em 1974, mais de 50 universidades americanas estavam conectadas à ARPANET. </p>
+  </div>
+  <div class="w3-row">
+    <div class="w3-twothird w3-container">
+      <h2 class="w3-text-teal">Transição do Arpanet para o TCP/IP</h2>
+      <p>Transição da ARPANET para o TCP/IP
+Apesar de seu sucesso, o protocolo NCP não era suficiente para se comunicar com redes ou máquinas fora da ARPANET, como redes de pacotes por rádio ou satélite.
+
+Por isso, em 1974 Robert Kahn e Vinton Cerf desenvolveram uma nova versão do protocolo que respondia a um ambiente de rede de arquitetura aberta. Esse novo protocolo foi chamado de TCP/IP.
+
+O protocolo TCP/IP, mais do que agir como um controlador, facilitava a comunicação entre redes sem a necessidade de que estas fizessem alterações em sua interface. Além disso, garantia que nenhum pacote de informações fosse perdido e verificava se eles chegavam na ordem em que haviam sido enviados.
+
+No início dos anos 80, mais precisamente em 1983, a ARPANET mudou o protocolo NCP para o novo TCP/IP. O IP havia se tornado o serviço portador da Infraestrutura de Informação Global.
+
+Em 1985, a Internet já estava consolidada como a principal rede de comunicação com alcance global.</p>
+    </div>
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">World Wide Web</h1>
+      <p>Mas o avanço não parou por aí. Em 1989, Tim Berners-Lee desenvolveu aWorld Wide Webpara facilitar o trabalho colaborativo no CERN.
+
+        Basicamente, a WWW funciona como um sistema de distribuição de documentos de hipertexto (HTTP) interconectados e acessíveis por meio de um navegador web conectado à Internet.
+        
+        O sistema se tornou tão popular no CERN que, em 1991, foi aberto ao público externo. Isso foi possível graças à criação do navegador Mosaic em 1993. De fato, sua recepção foi tão rápida que em 1997 havia mais de 200 mil sites.</p>
+    </div>
+    <div class="w3-twothird w3-container">
+        <h1 class="w3-text-teal">Internet atual</h1>
+        <p>Cenário atual da Internet
+            A Internet mudou radicalmente desde a sua origem. Já não se trata mais de um espaço onde e-mails são trocados e informações são armazenadas.
+            
+            Agora, ela está em todos os objetos e lugares em que oferece valor, como nos mostra o surgimento da Internet das Coisas.</p>
+            
+            <h3 class="w3-text-teal">Google</h3>  
+            Após a criação da WWW, o lançamento do Google em 1997 foi um novo ponto de virada na história da Internet. A empresa levou essa rede para um amplo público, oferecendo um navegador amigável.
+            
+            Hoje, o Google funciona como navegador e mecanismo de busca, conta com quase um bilhão de páginas indexadas e oferece fácil acesso às informações graças aos seus algoritmos. </p>  
+      </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+  </div>
+
+  <footer id="myFooter">
+    <div class="w3-container w3-theme-l2 w3-padding-0">
+      <h4>Footer</h4>
+    </div>
+
+    <div class="w3-container w3-theme-l1">
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </div>
+  </footer>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>
